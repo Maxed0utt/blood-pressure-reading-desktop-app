@@ -115,14 +115,10 @@ export function Nav() {
           >
             <img
               className="avatar"
-              src={
-                user?.profilePicture
-                  ? user.profilePicture
-                  : `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.email}`
-              }
+              src={user?.profilePicture || '/default-avatar.svg'}
               alt="avatar"
               onError={e => {
-                e.target.src = `https://api.dicebear.com/7.x/avataaars/svg?seed=${user?.email}`
+                e.target.src = '/default-avatar.svg'
               }}
             />
           </Link>
