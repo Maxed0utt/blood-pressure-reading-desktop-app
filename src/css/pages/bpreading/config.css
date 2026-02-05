@@ -1,13 +1,15 @@
-.bpreading-config-view form {
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  gap: 16px;
-  margin-bottom: 16px;
-}
+.bpreading-config-view {
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
 
-.bpreading-config-view .error {
-  color: #ee402e;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
+  .error {
+    color: #ee402e;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+  }
 }

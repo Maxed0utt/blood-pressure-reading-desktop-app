@@ -1,69 +1,71 @@
-.auth form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
+.auth {
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-.auth .error {
-  color: #ee402e;
-}
+  .error {
+    color: #ee402e;
+  }
 
-.auth .center-text {
-  text-align: center;
-}
+  .center-text {
+    text-align: center;
+  }
 
-/* Invitation-specific styles */
-.auth .invitation-header {
-  text-align: center;
-  margin-bottom: 2rem;
-}
+  /* Invitation-specific styles */
+  .invitation-header {
+    text-align: center;
+    margin-bottom: 2rem;
 
-.auth .invitation-header .invitation-icon {
-  color: var(--pico-success);
-  margin-bottom: 1rem;
-}
+    .invitation-icon {
+      color: var(--pico-success);
+      margin-bottom: 1rem;
+    }
 
-.auth .invitation-header h1 {
-  color: var(--pico-success);
-  margin-bottom: 1rem;
-}
+    h1 {
+      color: var(--pico-success);
+      margin-bottom: 1rem;
+    }
 
-.auth .invitation-header .invitation-details {
-  background-color: var(--pico-form-element-background-color);
-  padding: 1.5rem;
-  border-radius: 0.5rem;
-  margin-top: 1rem;
-}
+    .invitation-details {
+      background-color: var(--pico-form-element-background-color);
+      padding: 1.5rem;
+      border-radius: 0.5rem;
+      margin-top: 1rem;
 
-.auth .invitation-header .invitation-details p {
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
-}
+      p {
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+      }
 
-.auth .invitation-header .invitation-details .user-info {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  color: var(--pico-primary);
-  font-weight: 600;
-}
+      .user-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        color: var(--pico-primary);
+        font-weight: 600;
+      }
+    }
+  }
 
-.auth .disabled-field {
-  opacity: 0.6;
-  cursor: not-allowed;
-  background-color: var(--pico-form-element-invalid-background-color);
-}
+  .disabled-field {
+    opacity: 0.6;
+    cursor: not-allowed;
+    background-color: var(--pico-form-element-invalid-background-color);
+  }
 
-.auth .invitation-footer {
-  text-align: center;
-  margin-top: 2rem;
-  padding-top: 1rem;
-  border-top: 1px solid var(--pico-border-color);
-}
+  .invitation-footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--pico-border-color);
 
-.auth .invitation-footer p {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin: 0;
+    p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+      margin: 0;
+    }
+  }
 }
