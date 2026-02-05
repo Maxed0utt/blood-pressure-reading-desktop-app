@@ -134,14 +134,6 @@ export default function Profile() {
               >
                 {theme === 'light' ? '🌙' : '☀️'}
               </button>
-              <button
-                onClick={handleLogout}
-                className="outline"
-                data-cy="logout-button"
-              >
-                <LogOut size={18} />
-                <span>Logout</span>
-              </button>
             </div>
           </header>
 
@@ -152,7 +144,17 @@ export default function Profile() {
             </div>
 
             <div className="action-section">
-              <ModalButton modalId="update-profile">Edit Profile</ModalButton>
+              <div className="button-column">
+                <ModalButton modalId="update-profile">Edit Profile</ModalButton>
+                <button
+                  onClick={handleLogout}
+                  className="outline logout-button"
+                  data-cy="logout-button"
+                >
+                  <LogOut size={18} />
+                  <span>Logout</span>
+                </button>
+              </div>
             </div>
           </div>
 
