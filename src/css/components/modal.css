@@ -1,0 +1,14 @@
+.modal {
+  z-index: 1000;
+}
+
+.modal .modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.modal .modal-header h3 {
+  margin: 0;
+}

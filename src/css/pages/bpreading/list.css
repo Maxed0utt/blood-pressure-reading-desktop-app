@@ -1,0 +1,100 @@
+.bpreading-list-view .list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bpreading-list-view .list-header h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.bpreading-list-view .list-header .action-text {
+  margin-left: 10px;
+}
+
+@media (max-width: 475px) {
+  .bpreading-list-view .list-header .action-text {
+    display: none;
+  }
+}
+
+.bpreading-list-view .header-actions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.bpreading-list-view .header-actions button,
+.bpreading-list-view .header-actions [role='button'] {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+}
+
+.bpreading-list-view .import-button-label {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.bpreading-list-view .import-button-label .hidden-input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.bpreading-list-view .import-button-label [role='button'] {
+  display: inline-flex;
+  align-items: center;
+  pointer-events: none;
+}
+
+.bpreading-list-view .import-error {
+  margin: 0 30px 1rem;
+  padding: 1rem;
+  border-radius: var(--pico-border-radius);
+  background-color: var(--pico-del-color);
+  color: var(--pico-color);
+}
+
+.bpreading-list-view .import-error pre {
+  margin: 0.5rem 0 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-size: 0.875rem;
+}
+
+.bpreading-list-view .import-success {
+  margin: 0 30px 1rem;
+  padding: 1rem;
+  border-radius: var(--pico-border-radius);
+  background-color: var(--pico-ins-color);
+  color: var(--pico-color);
+}
+
+.bpreading-list-view .empty-state {
+  text-align: center;
+}
+
+.bpreading-list-view table td .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+}
+
+@media (max-width: 2000px) {
+  .bpreading-list-view table td .grid {
+    grid-template-columns: 1fr;
+  }
+}

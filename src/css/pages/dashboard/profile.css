@@ -1,0 +1,153 @@
+.info-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 0 var(--pico-spacing);
+}
+
+@media (min-width: 768px) {
+  .info-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.info-section .text-section p {
+  margin: 0;
+}
+
+.info-section .text-section p:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.info-section .action-section {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+@media (max-width: 767px) {
+  .info-section .action-section {
+    justify-content: flex-start;
+    margin-top: 1rem;
+  }
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0 var(--pico-spacing);
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+section header {
+  padding: 0 var(--pico-spacing);
+  margin-bottom: 1rem;
+}
+
+section header h2 {
+  margin-bottom: 0;
+}
+
+section hr {
+  margin: 1rem var(--pico-spacing);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.header-actions button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+
+.header-actions button svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Modal styles for mobile */
+.modal-content {
+  padding: var(--pico-spacing);
+}
+
+@media (max-width: 767px) {
+  .modal-content {
+    padding: 1rem;
+  }
+}
+
+/* Success message styling */
+.success {
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: var(--pico-success-background);
+  color: var(--pico-success-color);
+  border-radius: var(--pico-border-radius);
+  text-align: center;
+}
+
+.profile-picture-upload {
+  display: block;
+  margin-bottom: 1.5rem;
+  cursor: pointer;
+}
+
+.profile-picture-container {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 2px solid #e2e8f0;
+}
+
+.profile-picture-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-picture-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  color: white;
+}
+
+.profile-picture-container:hover .profile-picture-overlay {
+  opacity: 1;
+}
+
+.plus-icon {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.upload-text {
+  font-size: 0.875rem;
+}
+
+.hidden-input {
+  display: none;
+}

@@ -1,0 +1,79 @@
+#KxWAX5 {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+#KxWAX5 main {
+  flex-grow: 1;
+  padding: 100px 50px;
+  height: 100vh;
+  overflow-y: auto;
+  margin-left: 16rem;
+}
+
+@media (max-width: 1024px) {
+  #KxWAX5 main {
+    margin-left: 0;
+  }
+}
+
+.danger {
+  color: #ffffff;
+  border-color: transparent;
+  background-color: #d93526;
+}
+
+[data-theme='dark'] .danger {
+  background-color: #af291d;
+}
+
+.danger:hover {
+  background-color: #ee402e;
+}
+
+[data-theme='dark'] .danger:hover {
+  background-color: #c52f21;
+}
+
+/* Status badges */
+.badge {
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge.verified {
+  background-color: var(--pico-form-element-valid-border-color);
+  color: var(--pico-contrast);
+}
+
+.badge.unverified {
+  background-color: var(--pico-form-element-invalid-border-color);
+  color: var(--pico-contrast-inverse);
+}
+
+.badge.change-requested {
+  color: var(--pico-contrast);
+  background-color: #ffa23a;
+}
+
+[data-theme='dark'] .badge.change-requested {
+  background-color: #bf6e00;
+}
+
+/* Checkbox focus accessibility enhancement */
+label:has(input[type='checkbox']:focus),
+.checkbox-container:has(input[type='checkbox']:focus) {
+  background-color: var(--primary, #0172ad);
+  color: var(--primary-inverse, #fff);
+  outline: 2px solid var(--primary, #0172ad);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(1, 170, 255, 0.25);
+}
+
+input[type='checkbox']:focus {
+  outline: none;
+}
