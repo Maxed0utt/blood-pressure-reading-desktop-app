@@ -1,14 +1,14 @@
 import Modal from '@/components/Modal'
 import ModalButton from '@/components/ModalButton'
+import '@/css/pages/bpreading/list.css'
 import AppLayout from '@/layouts/AppLayout'
-import {Link} from 'react-router-dom'
-import {Download, Pencil, SquarePlus, Trash, Upload} from 'lucide-react'
-import {useRef, useState, useEffect} from 'react'
 import {api} from '@/utils/api'
 import {formatDate} from '@/utils/index'
 import {save} from '@tauri-apps/plugin-dialog'
 import {writeTextFile} from '@tauri-apps/plugin-fs'
-import '@/css/pages/bpreading/list.css'
+import {FolderUp, Import, Pencil, SquarePlus, Trash} from 'lucide-react'
+import {useEffect, useRef, useState} from 'react'
+import {Link} from 'react-router-dom'
 
 export default function BPReadingList() {
   /* ==========================================================================
@@ -189,7 +189,7 @@ export default function BPReadingList() {
                 className="outline"
                 data-cy="export-button"
               >
-                <Download />
+                <FolderUp />
                 <span className="action-text">
                   {state.isExporting ? 'Exporting...' : 'Export'}
                 </span>
@@ -211,7 +211,7 @@ export default function BPReadingList() {
                   role="button"
                   className="outline"
                 >
-                  <Upload />
+                  <Import />
                   <span className="action-text">
                     {state.isImporting ? 'Importing...' : 'Import'}
                   </span>
